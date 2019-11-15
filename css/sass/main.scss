@@ -1,3 +1,84 @@
+/*** BASE: START ***/
+html {
+	// This defines what 1rem is
+	font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+/*** BASE: END ***/
+
+/*** NAVBAR: START ***/
+.navbar {
+	overflow: hidden;
+	position: absolute;
+	svg {
+		padding: 20px;
+	}
+}
+
+.side-nav {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #eeeeef;
+	overflow-x: hidden;
+	transition: 0.5s;
+
+	.btn-close {
+		width: 3rem;
+		height: 3rem;
+	}
+
+	input {
+		margin-top: 2rem;
+		margin-bottom: 3rem;
+		padding-left: 1rem;
+		width: 80%;
+		height: 3rem;
+		font-size: 2.5rem;
+		border-radius: 2rem;
+		align-self: center;
+	}
+
+	h2 {
+		margin-left: 20px;
+		font-size: 3rem;
+	}
+
+	li {
+		margin-bottom: 1.8rem;
+	}
+
+	a {
+		padding: 10px 10px 10px 10px;
+		text-decoration: none;
+		font-size: 2.2rem;
+		color: #a0a0a0;
+		transition: 0.3s;
+	}
+
+	a:hover {
+		color: #da1c85;
+	}
+}
+/*** NAVBAR: END ***/
+
+/*** HOMEPAGE: START ***/
 #vseen {
 	display: flex;
 	width: 100%;
@@ -10,11 +91,11 @@
 	.vseen-logo {
 		display: flex;
 		justify-content: center;
-		border: 2px solid white;
+		// border: 2px solid white;
 
 		img {
-			width: 30%;
-			height: 150px;
+			flex-basis: 50%;
+			height: 11rem;
 		}
 	}
 }
@@ -30,11 +111,12 @@
 	.village-logo {
 		display: flex;
 		justify-content: center;
-		border: 2px solid black;
+		// border: 2px solid black;
 
 		img {
-			width: 30%;
-			height: 150px;
+			flex-basis: 50%;
+			height: 20rem;
 		}
 	}
 }
+/*** HOMEPAGE: END ***/
