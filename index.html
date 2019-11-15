@@ -13,15 +13,59 @@
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
-		<div id="vseen">
-			<a class="vseen-logo" href="#"
-				><img src="images/coming-soon.png" alt="VSEEN Logo"
-			/></a>
+		<nav class="navbar">
+			<span class="open-slide" onclick="openSlideMenu()">
+				<a href="#">
+					<svg width="30" height="30">
+						<path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+						<path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+						<path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+					</svg>
+				</a>
+			</span>
+		</nav>
+
+		<div id="slide-menu" class="side-nav">
+			<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+			<input placeholder="Search..." />
+
+			<h2>Village Print</h2>
+			<ul>
+				<li><a href="#">Large format</a></li>
+				<li><a href="#">Trifolds</a></li>
+				<li><a href="#">Books</a></li>
+				<li><a href="#">Postcards</a></li>
+				<li><a href="#">Pull up banners</a></li>
+				<li><a href="#">Specialty print</a></li>
+				<li><a href="#">Custom packaging</a></li>
+			</ul>
+
+			<h2>VSEEN</h2>
+			<ul>
+				<li><a href="#">Website</a></li>
+				<li><a href="#">AR</a></li>
+				<li><a href="#">Design</a></li>
+				<li><a href="#">Video Production</a></li>
+				<li><a href="#">Digital Publication</a></li>
+				<li><a href="#">Animation</a></li>
+				<li><a href="#">Photography</a></li>
+			</ul>
 		</div>
-		<div id="village">
-			<a class="village-logo" href="#"
-				><img src="images/coming-soon.png" atl="Village Logo"
-			/></a>
+
+		<div id="root">
+			<div id="vseen">
+				<a class="vseen-logo" href="#"
+					><img src="images/VSEEN-LOGO-WHITE.png" alt="VSEEN Logo"
+				/></a>
+			</div>
+
+			<div id="village">
+				<a class="village-logo" href="#"
+					><img src="images/VPM_Logo_RGB.png" atl="Village Logo"
+				/></a>
+			</div>
 		</div>
+
+		<script src="js/scripts.js"></script>
 	</body>
 </html>
