@@ -87,17 +87,17 @@ li {
 
 /*** NAVBAR: END ***/
 /*** HOMEPAGE: START ***/
+.root {
+  width: 100%;
+}
+
 #vseen {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 50vh;
   background-color: #000;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -106,18 +106,8 @@ li {
           align-items: center;
 }
 
-#vseen .vseen-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 #vseen .vseen-logo img {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  max-width: 100%;
   height: 11rem;
 }
 
@@ -125,7 +115,7 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 50vh;
   background-color: #fff;
   -webkit-box-pack: center;
@@ -136,18 +126,8 @@ li {
           align-items: center;
 }
 
-#village .village-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 #village .village-logo img {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  max-width: 100%;
   height: 20rem;
 }
 
