@@ -1,6 +1,8 @@
 /*** BASE: START ***/
 html {
   font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -17,6 +19,15 @@ li {
 
 /*** BASE: END ***/
 /*** NAVBAR: START ***/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .navbar {
   overflow: hidden;
   position: absolute;
@@ -39,7 +50,6 @@ li {
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
   background-color: #eeeeef;
   overflow-x: hidden;
   -webkit-transition: 0.5s;
@@ -51,12 +61,12 @@ li {
 }
 
 .side-nav input {
-  margin-top: 1.5rem;
-  margin-bottom: 3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
   padding-left: 1rem;
   width: 80%;
   height: 3rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   border-radius: 2rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -65,6 +75,8 @@ li {
 
 .side-nav h2 {
   margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   font-size: 3rem;
 }
 
@@ -75,7 +87,7 @@ li {
 .side-nav a {
   padding: 10px 10px 10px 10px;
   text-decoration: none;
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: #a0a0a0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -95,7 +107,6 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
   height: 50vh;
   background-color: #000;
   -webkit-box-pack: center;
@@ -106,16 +117,24 @@ li {
           align-items: center;
 }
 
+#vseen .vseen-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+}
+
 #vseen .vseen-logo img {
-  max-width: 100%;
-  height: 11rem;
+  width: 55%;
 }
 
 #village {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
   height: 50vh;
   background-color: #fff;
   -webkit-box-pack: center;
@@ -126,11 +145,160 @@ li {
           align-items: center;
 }
 
+#village .village-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+}
+
 #village .village-logo img {
-  max-width: 100%;
-  height: 20rem;
+  width: 55%;
 }
 
 /*** HOMEPAGE: END ***/
 /*** SERVICE PAGE: START ***/
+.services-section {
+  height: 100vh;
+  background-color: #000;
+}
+
+.services-section .other-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  height: 20rem;
+}
+
+.services-section .other-header .btn-back {
+  font-size: 3.5rem;
+  color: #fff;
+  margin: 10px 0 0 10px;
+}
+
+.services-section .other-header img {
+  width: 55%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 3rem;
+}
+
+.services-section .icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40%;
+  position: relative;
+  top: 2rem;
+}
+
+.services-section .icons-container .icon-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.services-section .icons-container .icon-set .icon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px yellow solid;
+}
+
+.services-section .icons-container .icon-set .icon-box .icon {
+  width: 55%;
+  background-color: #da1c85;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+
+.services-section .icons-container .icon-set .icon-box .caption {
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 1px greenyellow solid;
+  color: #fff;
+}
+
 /*** SERVICE PAGE: END ***/
+/*** iPhone 6/7/8/ media query ***/
+@media only screen and (min-width: 375px) {
+  .icons-container {
+    height: 50vh !important;
+  }
+}
+
+/*** iPhone 6/7/8 media query ***/
+/*** Iphone 6/7/8 Plus ***/
+/*** Iphone 6/7/8 Plus ***/
+/*** iPad ***/
+@media only screen and (min-width: 768px) {
+  .icons-container {
+    height: 70vh !important;
+  }
+}
+
+/*** iPad ***/
+/*** iPad Pro ***/
+@media only screen and (min-width: 1024px) {
+  .icons-container {
+    height: 80vh !important;
+  }
+  .icons-container .icon {
+    max-width: 70% !important;
+  }
+  .icons-container .caption {
+    font-size: 2.5rem !important;
+  }
+}
+
+/*** iPad Pro ***/
+/*** Desktop ***/
+@media only screen and (min-width: 1500px) {
+  .icons-container {
+    height: 75vh !important;
+  }
+  .icons-container .icon-set {
+    width: 40% !important;
+  }
+  .icons-container .icon-set .icon-box {
+    width: 50% !important;
+  }
+  .icons-container .icon-set .icon-box .icon {
+    max-width: 30% !important;
+  }
+  .icons-container .icon-set .icon-box .caption {
+    font-size: 1.8rem !important;
+  }
+  .other-header img {
+    width: 25% !important;
+  }
+}
+
+/*** Desktop ***/
