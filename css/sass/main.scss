@@ -24,8 +24,8 @@ li {
 	.other-header {
 		display: flex;
 		flex-flow: column nowrap;
-		height: 20%;
-
+		height: 15%;
+		// border: 1px solid red;
 		.btn-back {
 			font-size: 3.5rem;
 			color: #fff;
@@ -36,6 +36,22 @@ li {
 			width: 30%;
 			align-self: center;
 			margin-top: 3rem;
+		}
+	}
+
+	.heading {
+		// border: 1px solid yellow;
+		.service-name {
+			position: relative;
+			top: 5px;
+			color: #fff;
+			font-size: 1.6rem;
+			margin-left: 8%;
+		}
+
+		hr {
+			width: 93%;
+			opacity: 0.5;
 		}
 	}
 }
@@ -147,7 +163,7 @@ header {
 }
 /*** HOMEPAGE: END ***/
 
-/*** SERVICE PAGE: START ***/
+/*** SERVICES PAGE: START ***/
 .icons-container {
 	display: flex;
 	height: 40%;
@@ -183,7 +199,40 @@ header {
 	}
 }
 
-/*** SERVICE PAGE: END ***/
+/*** SERVICES PAGE: END ***/
+
+/*** PROJECTS PAGE: START ***/
+
+.projects-container {
+	// border: 2px dotted red;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 90%;
+	height: 76%;
+	margin: 0 auto;
+	overflow-y: auto;
+
+	.project {
+		// border: 1px solid yellow;
+		margin-bottom: 10px;
+		flex: 0 0 80%;
+
+		.project-title {
+			color: #da1c85;
+		}
+
+		.client-name {
+			color: #fff;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+/*** PROJECTS PAGE: END ***/
 
 /************************** MEDIA QUERIES **************************/
 
@@ -219,6 +268,14 @@ header {
 			}
 		}
 	}
+
+	// .projects-container {
+	// 	.projects {
+	// 		img {
+	// 			width: 80%;
+	// 		}
+	// 	}
+	// }
 }
 /*** iPad ***/
 

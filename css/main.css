@@ -30,7 +30,7 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  height: 20%;
+  height: 15%;
 }
 
 .section .other-header .btn-back {
@@ -45,6 +45,19 @@ li {
       -ms-grid-row-align: center;
       align-self: center;
   margin-top: 3rem;
+}
+
+.section .heading .service-name {
+  position: relative;
+  top: 5px;
+  color: #fff;
+  font-size: 1.6rem;
+  margin-left: 8%;
+}
+
+.section .heading hr {
+  width: 93%;
+  opacity: 0.5;
 }
 
 /*** BASE: END ***/
@@ -190,7 +203,7 @@ header {
 }
 
 /*** HOMEPAGE: END ***/
-/*** SERVICE PAGE: START ***/
+/*** SERVICES PAGE: START ***/
 .icons-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -246,7 +259,45 @@ header {
   color: #fff;
 }
 
-/*** SERVICE PAGE: END ***/
+/*** SERVICES PAGE: END ***/
+/*** PROJECTS PAGE: START ***/
+.projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  height: 76%;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+
+.projects-container .project {
+  margin-bottom: 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 80%;
+          flex: 0 0 80%;
+}
+
+.projects-container .project .project-title {
+  color: #da1c85;
+}
+
+.projects-container .project .client-name {
+  color: #fff;
+}
+
+.projects-container .project img {
+  width: 100%;
+}
+
+/*** PROJECTS PAGE: END ***/
 /************************** MEDIA QUERIES **************************/
 /*** iPhone 6/7/8/ media query ***/
 @media only screen and (min-width: 375px) {
