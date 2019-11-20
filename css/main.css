@@ -17,6 +17,36 @@ li {
   list-style-type: none;
 }
 
+.section {
+  height: 100vh;
+  background-color: #000;
+}
+
+.section .other-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  height: 20%;
+}
+
+.section .other-header .btn-back {
+  font-size: 3.5rem;
+  color: #fff;
+  margin: 10px 0 0 10px;
+}
+
+.section .other-header img {
+  width: 30%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 3rem;
+}
+
 /*** BASE: END ***/
 /*** NAVBAR: START ***/
 header {
@@ -85,7 +115,7 @@ header {
 }
 
 .side-nav a {
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   text-decoration: none;
   font-size: 2rem;
   color: #a0a0a0;
@@ -161,37 +191,7 @@ header {
 
 /*** HOMEPAGE: END ***/
 /*** SERVICE PAGE: START ***/
-.services-section {
-  height: 100vh;
-  background-color: #000;
-}
-
-.services-section .other-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  height: 20rem;
-}
-
-.services-section .other-header .btn-back {
-  font-size: 3.5rem;
-  color: #fff;
-  margin: 10px 0 0 10px;
-}
-
-.services-section .other-header img {
-  width: 55%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-top: 3rem;
-}
-
-.services-section .icons-container {
+.icons-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,7 +200,7 @@ header {
   top: 2rem;
 }
 
-.services-section .icons-container .icon-set {
+.icons-container .icon-set {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,7 +217,7 @@ header {
   width: 50%;
 }
 
-.services-section .icons-container .icon-set .icon-box {
+.icons-container .icon-set .icon-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,14 +232,14 @@ header {
   border: 2px yellow solid;
 }
 
-.services-section .icons-container .icon-set .icon-box .icon {
+.icons-container .icon-set .icon-box .icon {
   width: 55%;
   background-color: #da1c85;
   margin-top: 20px;
   border-radius: 50%;
 }
 
-.services-section .icons-container .icon-set .icon-box .caption {
+.icons-container .icon-set .icon-box .caption {
   font-size: 1.5rem;
   font-weight: 600;
   border: 1px greenyellow solid;
@@ -247,6 +247,7 @@ header {
 }
 
 /*** SERVICE PAGE: END ***/
+/************************** MEDIA QUERIES **************************/
 /*** iPhone 6/7/8/ media query ***/
 @media only screen and (min-width: 375px) {
   .icons-container {
@@ -281,6 +282,9 @@ header {
 /*** iPad Pro ***/
 /*** Desktop ***/
 @media only screen and (min-width: 1500px) {
+  .other-header img {
+    width: 25% !important;
+  }
   .icons-container {
     height: 75vh !important;
   }
@@ -295,9 +299,6 @@ header {
   }
   .icons-container .icon-set .icon-box .caption {
     font-size: 1.8rem !important;
-  }
-  .other-header img {
-    width: 25% !important;
   }
 }
 

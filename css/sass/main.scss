@@ -16,6 +16,29 @@ a {
 li {
 	list-style-type: none;
 }
+
+.section {
+	height: 100vh;
+	background-color: #000;
+
+	.other-header {
+		display: flex;
+		flex-flow: column nowrap;
+		height: 20%;
+
+		.btn-back {
+			font-size: 3.5rem;
+			color: #fff;
+			margin: 10px 0 0 10px;
+		}
+
+		img {
+			width: 30%;
+			align-self: center;
+			margin-top: 3rem;
+		}
+	}
+}
 /*** BASE: END ***/
 
 /*** NAVBAR: START ***/
@@ -39,10 +62,10 @@ header {
 	position: fixed;
 	z-index: 1;
 	top: 0;
-	// left: 0;
 	background-color: #eeeeef;
 	overflow-x: hidden;
 	transition: 0.5s;
+	// align-items: center;
 
 	.btn-close {
 		font-size: 3.5rem;
@@ -71,7 +94,7 @@ header {
 	}
 
 	a {
-		padding: 10px 10px 10px 10px;
+		padding: 10px;
 		text-decoration: none;
 		font-size: 2rem;
 		color: #a0a0a0;
@@ -125,65 +148,44 @@ header {
 /*** HOMEPAGE: END ***/
 
 /*** SERVICE PAGE: START ***/
-.services-section {
-	height: 100vh;
-	background-color: #000;
+.icons-container {
+	display: flex;
+	height: 40%;
+	position: relative;
+	top: 2rem;
 
-	.other-header {
+	.icon-set {
 		display: flex;
-		flex-flow: column nowrap;
-		height: 20rem;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
 
-		.btn-back {
-			font-size: 3.5rem;
-			color: #fff;
-			margin: 10px 0 0 10px;
-		}
-
-		img {
-			width: 55%;
-			align-self: center;
-			margin-top: 3rem;
-		}
-	}
-
-	.icons-container {
-		display: flex;
-		height: 40%;
-		position: relative;
-		top: 2rem;
-
-		.icon-set {
+		.icon-box {
 			display: flex;
-			flex-direction: column;
-			justify-content: center;
+			text-align: center;
+			flex-flow: column nowrap;
 			align-items: center;
-			width: 50%;
-
-			.icon-box {
-				display: flex;
-				text-align: center;
-				flex-flow: column nowrap;
-				align-items: center;
-				// width: 50%;
-				border: 2px yellow solid;
-				.icon {
-					width: 55%;
-					background-color: #da1c85;
-					margin-top: 20px;
-					border-radius: 50%;
-				}
-				.caption {
-					font-size: 1.5rem;
-					font-weight: 600;
-					border: 1px greenyellow solid;
-					color: #fff;
-				}
+			border: 2px yellow solid;
+			.icon {
+				width: 55%;
+				background-color: #da1c85;
+				margin-top: 20px;
+				border-radius: 50%;
+			}
+			.caption {
+				font-size: 1.5rem;
+				font-weight: 600;
+				border: 1px greenyellow solid;
+				color: #fff;
 			}
 		}
 	}
 }
+
 /*** SERVICE PAGE: END ***/
+
+/************************** MEDIA QUERIES **************************/
 
 /*** iPhone 6/7/8/ media query ***/
 @media only screen and (min-width: 375px) {
@@ -236,6 +238,11 @@ header {
 
 /*** Desktop ***/
 @media only screen and (min-width: 1500px) {
+	.other-header {
+		img {
+			width: 25% !important;
+		}
+	}
 	.icons-container {
 		height: 75vh !important;
 		// justify-content: space-evenly !important;
@@ -253,12 +260,6 @@ header {
 					font-size: 1.8rem !important;
 				}
 			}
-		}
-	}
-
-	.other-header {
-		img {
-			width: 25% !important;
 		}
 	}
 }
